@@ -5,58 +5,33 @@
     padding: 0px;
 }
 
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+}
+
 header{
     background-color: black;
+    color: white;
     text-align: center;
 }
 
 header h1{
-    color: white;
+    padding-top: 50px;
+    font-variant: small-caps;
 }
 
-nav{
-    background-color: black;
-    text-align: center;
+header p{
+    padding-bottom: 50px;
 }
 
-nav p{
-    color: white;
-}
-
-nav a{
+header a, footer a{
     color: white;
     text-decoration: none;
-}
-
-nav a:hover{
-    text-decoration: underline;
-    color: blue;
-}
-
-article{
-    background-image: url();
-}
-
-section p{
-    height: 500px;
-    width: 400px;
-}
-
-footer{
-    background-color: black;
-    color: white;
-    text-align: center;
-    font-size: 0.9em;
-    padding: 7px;
-}
-
-footer a{
-    color: white;
     font-weight: bolder;
-    text-decoration: none;
 }
 
-footer a:hover{
+a:hover{
     text-decoration: underline;
     color: blue;
 }
