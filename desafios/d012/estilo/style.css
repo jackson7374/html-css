@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+header h1{
+    color: white;
+}
+
+nav{
+    background-color: black;
+    text-align: center;
+}
+
+nav p{
+    color: white;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+    color: blue;
+}
+
+article{
+    background-image: url(Cordel/background001.jpg);
+    height: 100px;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;
+    padding: 7px;
+}
+
+footer a{
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
+}
+
+footer a:hover{
+    text-decoration: underline;
+    color: blue;
+}
