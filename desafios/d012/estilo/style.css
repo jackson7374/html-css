@@ -34,8 +34,12 @@ nav a:hover{
 }
 
 article{
-    background-image: url(Cordel/background001.jpg);
-    height: 100px;
+    background-image: url();
+}
+
+section p{
+    height: 500px;
+    width: 400px;
 }
 
 footer{
