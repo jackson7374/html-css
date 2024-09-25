@@ -15,44 +15,113 @@
             justify-content: center;
         }
 
+        caption{
+            background-color: black;
+            color: white;
+            border: 1px solid black;
+            border-radius: 7px 7px 0px 0px;
+            padding: 10px;
+            font-weight: bolder;
+            font-size: 20px;
+        }
+
         table{
             border-collapse: collapse;
-            width: 500px;
+            width: 600px;
         }
 
         td, th{
             border: 1px solid black;
-            padding: 10px;
+            padding: 8px;
             text-align: center;
+        }
+
+        tfoot{
+            background-color: black;
+            color: white;
+        }
+
+        .cinza{
+            background-color: gray;
+            color: white;
+        }
+
+        .esquerda{
+            text-align: left;
+            font-weight: bolder;
         }
 
     </style>
 </head>
 <body>
-    <table>
-        <thead>
-            <tr>
-                <th rowspan="2">Área</th>
-                <th rowspan="2">Disciplinas</th>
-                <th>Notas</th>
-                <th>Nota 1</th>
-                <th>Nota 2</th>
-                <th rowspan="4">Média</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Exatas</td>
-                <td>Matemática</td>
-                <td>7.0</td>
-                <td>5.0</td>
-                <td>7.0</td>
-                <td>19.0</td>
-            </tr>
-            <tr>
-                
-            </tr>
-        </tbody>
-    </table>
+    <div class="tabela">
+        <table>
+            <caption>Boletim Escolar</caption>
+            <thead>
+                <tr class="cinza">
+                    <th rowspan="2">Áreas</th>
+                    <th rowspan="2">Disciplinas</th>
+                    <th colspan="2">Notas</th>
+                    <th rowspan="2">Média</th>
+                </tr>
+                <tr class="cinza">
+                    <th>Notas 1</th>
+                    <th>Notas 2</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="4">Exatas</th>
+                    <td class="esquerda">Matemática</td>
+                    <td>7.0</td>
+                    <td>8.0</td>
+                    <td>20.0</td>
+                </tr>
+                <tr>
+                    <td class="esquerda">Física</td>
+                    <td>6.0</td>
+                    <td>7.0</td>
+                    <td>13.0</td>
+                </tr>
+                <tr>
+                    <td class="esquerda">Química</td>
+                    <td>8.0</td>
+                    <td>10.0</td>
+                    <td>18.0</td>
+                </tr>
+                <tr>
+                    <td class="esquerda">Biologia</td>
+                    <td>7.0</td>
+                    <td>7.0</td>
+                    <td>14.0</td>
+                </tr>
+                <tr class="cinza">
+                    <th colspan="4" class="esquerda">Média de Exatas</th>
+                    <th >65.0</th>
+                </tr>
+                <tr>
+                    <th rowspan="2">Humanas</th>
+                    <td class="esquerda">Hítoria</td>
+                    <td>5.0</td>
+                    <td>6.0</td>
+                    <td>11.0</td>
+                </tr>
+                <tr>
+                    <td class="esquerda">Geografia</td>
+                    <td>6.0</td>
+                    <td>8.0</td>
+                    <td>14.0</td>
+                </tr>
+                <tr class="cinza">
+                    <th colspan="4" class="esquerda">Média de Humanas</th>
+                    <th>25.0</th>
+                </tr>
+            </tbody>
+            <tfoot >
+                <th colspan="4">Média Total</th>
+                <th>90.0</th>
+            </tfoot>
+        </table>
+    </div>
 </body>
 </html>
