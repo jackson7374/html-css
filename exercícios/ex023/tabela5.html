@@ -9,6 +9,11 @@
             font-family: Arial, Helvetica, sans-serif;
         }
 
+        h1{
+            text-align: center;
+            font-size: 2em;
+        }
+
         .tabela{
             display: flex;
             justify-content: center;
@@ -28,10 +33,80 @@
         th, td{
             border: 1px solid black;
             padding: 9px;
+            text-align: center;
         }
+
+        .nome{
+            background-color: pink;
+        }
+
+        .grupo{
+            background-color: rgb(111, 111, 231);
+        }
+
+        .profissao{
+            background-color: pink;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Exercicio de Tabela</h1>
+    <h1>Exercício de Tabela</h1>
+    <div class="tabela">
+        <table>
+            <colgroup>
+                <col class="nome">
+                <col class="grupo" span="2">
+                <col class="profissao">
+            </colgroup>
+            <caption>Cadastro</caption>
+            <thaed>
+                <tr>
+                    <th scope="col">Nome</th>
+                    <th scope="col">Sexo</th>
+                    <th scope="col">Idade</th>
+                    <th scope="col">Profissão</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gabriel</td>
+                    <td>M</td>
+                    <td>28</td>
+                    <td>Engenheiro Civil</td>
+                </tr>
+                <tr>
+                    <td>Laura</td>
+                    <td>F</td>
+                    <td>32</td>
+                    <td>Médica</td>
+                </tr>
+                <tr>
+                    <td>Pedro</td>
+                    <td>M</td>
+                    <td>24</td>
+                    <td>Designer Gráfico</td>
+                </tr>
+                <tr>
+                    <td>Sofia</td>
+                    <td>F</td>
+                    <td>29</td>
+                    <td>Advogada</td>
+                </tr>
+                <tr>
+                    <td>Lucas</td>
+                    <td>M</td>
+                    <td>35</td>
+                    <td>Professor de História</td>
+                </tr>
+                <tr>
+                    <td>Mariana</td>
+                    <td>F</td>
+                    <td>27</td>
+                    <td>Arquiteta</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
 </body>
 </html>
