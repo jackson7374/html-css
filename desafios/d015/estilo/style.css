@@ -53,6 +53,6 @@ li{
     height: 70px;
     margin: 0px 10px 25px 0px;
     border-radius: 50%;
-    background: black url('../imagens/logo-instagram.jpg') no-repeat center center ;
+    background: black url('../imagens/logo-instagram.jpg') no-repeat;
     background-size: cover;
 }
