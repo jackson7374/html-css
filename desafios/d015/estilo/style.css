@@ -42,17 +42,23 @@ main{
     height: 470px;
 }
 
-div{
+#redes-sociais{
     display: flex;
-    justify-content: end;
-    padding: 24px 13px 0px 0px;
+    flex-direction: column;
+    align-items: end;
 }
 
-li{
-    width: 70px;
-    height: 70px;
-    margin: 0px 10px 25px 0px;
+#redes-sociais > a > img{
+    width: 53px;
+    margin: 13px;
     border-radius: 50%;
-    background: black url('../imagens/logo-instagram.jpg') no-repeat;
-    background-size: cover;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.76);
+    box-sizing: border-box;
+}
+
+img:hover{
+    border: 2.8px solid rgba(255, 255, 255, 0.719);
+    transform: translate(-4px, -4px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.774);
+    transition: transform .4s;
 }
